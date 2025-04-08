@@ -34,8 +34,12 @@
  ![TAILWIND](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ## Front-End
 **link do front-end:**
+https://front-end-charada-mu.vercel.app/
+https://github.com/juliano-amaro/Front-end-charada
 
-
+**link do back-end**
+https://gerador-charadas-zeta.vercel.app/charada
+https://github.com/juliano-amaro/gerador-charadas
 
 ## Autores
 - Juliano Corrêa Amaro - juliano-amaro - juliano.amaro07@gmail.com
