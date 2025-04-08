@@ -36,6 +36,18 @@ def charada_aleatoria():
         return jsonify(random.choice(charadas)), 200
     else:
         return jsonify({{'mensagem': 'Erro! Nenhuma charada encontrada!⛔'}})
+    
+@app.route('/charada/lista', methods=['GET'])
+def charada_lista():
+    charadas = []
+    lista = db.collection('charadas').stream()
+    for item in lista:
+        charadas.append(item.to_dict())
+    
+    if charadas:
+        return jsonify(charadas), 200
+    else:
+        return jsonify({{'mensagem': 'Erro! Nenhuma charada encontrada!⛔'}})
 
 @app.route('/charada/<id>', methods=['GET'])
 def busca(id):
